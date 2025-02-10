@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    #container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        margin: 10px 5px 0 0;
+        border: none;
+        border-radius: 4px;
+        background-color: #5cb85c;
+        color: white;
+        cursor: pointer;
+    }
+
+    input[type="reset"] {
+        background-color: #d9534f;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        opacity: 0.9;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <h1>Sample form</h1>
+        <form action="#" method="post">
+            <label for="name">Enter your name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+
+            <label for="email">Enter your email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="date">Date Of Birth:</label><br>
+            <input type="date" name="date" id="date">
+            <br>
+            <label for="hobbies">Select your hobbies:</label><br>
+            <input type="checkbox" name="hobbies" id="hobbies" value="reading">Reading
+            <input type="checkbox" name="hobbies" id="hobbies" value="writing">Writing
+            <input type="checkbox" name="hobbies" id="hobbies" value="coding">Coding
+            <br>
+            <label for="country">Country: </label><br>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+            </select><br>
+            <label for="comments">Comments:</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

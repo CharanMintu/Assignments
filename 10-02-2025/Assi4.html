@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="food1.jpg" alt="Food 1">
+                <h3>Food Item 1</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="grid-item">
+                <img src="food2.jpg" alt="Food 2">
+                <h3>Food Item 2</h3>
+                <p>$12.00</p>
+            </div>
+            <div class="grid-item">
+                <img src="food3.jpg" alt="Food 3">
+                <h3>Food Item 3</h3>
+                <p>$15.00</p>
+            </div>
+            <div class="grid-item">
+                <img src="food4.jpg" alt="Food 4">
+                <h3>Food Item 4</h3>
+                <p>$8.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="slide1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="slide3.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@restaurant.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Restaurant</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
+</div>
